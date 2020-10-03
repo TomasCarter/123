@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<!-- saved from url=(0030)http://warungmodus.com/ls.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
-  <title>District Eleven</title>
+  <title>Contactless Menu</title>
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" integrity="sha512-uCQmAoax6aJTxC03VlH0uCEtE0iLi83TW1Qh6VezEZ5Y17rTrIE+8irz4H4ehM7Fbfbm8rb30OkxVkuwhXxrRg==" crossorigin="anonymous" />
   <style>
     html, body {
 		background: #fff;
+		font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+		font-size: 14px;
+		color: #000;
 		padding: 0;
 		margin: 0;
 		height: 100%;
@@ -52,30 +54,31 @@
   <div class="swiper-container swiper-container-initialized swiper-container-vertical">
     <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
 		<div class="swiper-slide swiper-slide-active" style="height: 63px;">
+			Tap 2x untuk perbesar
 			<div class="swiper-zoom-container">
-				<img src="https://picsum.photos/3508/2480">
+				<img src="/images/menu-portrait2.jpg">
 			</div>
 		</div>
 		<!-- Landscape Menu A4 -->
 		<div class="swiper-slide swiper-slide-next" style="height: 63px;">
 			<div class="swiper-zoom-container">
-				<img src="https://picsum.photos/3508/2480">
+				<img src="/images/menu-portrait1.jpg">
 			</div>
 		</div>
 		<div class="swiper-slide" style="height: 63px;">
 			<div class="swiper-zoom-container">
-				<img src="https://picsum.photos/3508/2480">
+				<img src="/images/menu-portrait3.jpg">
 			</div>
 		</div>
 		<div class="swiper-slide" style="height: 63px;">
 			<div class="swiper-zoom-container">
-				<img src="https://picsum.photos/3508/2480">
+				<img src="/images/menu-portrait4.jpg">
 			</div>
 		</div>
 		<!-- Portrait Menu  -->
 		<div class="swiper-slide" style="height: 63px;">
 			<div class="swiper-zoom-container">
-				<img src="https://picsum.photos/2480/3508">
+				<img src="/images/menu-portrait5.jpg">
 			</div>
 		</div>
     </div>
@@ -91,26 +94,11 @@
 			el: '.swiper-pagination',
 			clickable: true,
 		},
-		autoHeight: false,
+		autoHeight: true,
 		mousewheel: {
 			releaseOnEdges: true,
 		},
     });
-	$(document).ready(function() {
-		var mql = window.matchMedia("(orientation: portrait)");
-		if(mql.matches) {
-			window.location.replace("index.html");
-		} else {  
-
-		}
-		mql.addListener(function(m) {
-			if(m.matches) {
-				window.location.replace("index.html");
-			} else {
-
-			}
-		});
-	});		
   </script>
 
 
